@@ -51,7 +51,7 @@ public class SoccerDatabase implements SoccerDB {
      */
     @Override
     public SoccerPlayer getPlayer(String firstName, String lastName) {
-        return null;
+        return players.get(lastName + ", " + firstName);
     }
 
     /**
@@ -59,6 +59,8 @@ public class SoccerDatabase implements SoccerDB {
      *
      * @see SoccerDB#bumpGoals(String, String)
      */
+
+
     @Override
     public boolean bumpGoals(String firstName, String lastName) {
         return false;
